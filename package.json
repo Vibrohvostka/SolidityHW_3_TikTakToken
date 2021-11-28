@@ -1,0 +1,21 @@
+{
+  "name": "Trading",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT",
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile --all",
+    "migrate-rinkeby": "truffle migrate --network rinkeby --reset",
+    "verify-contract": "truffle run verify Trading --network rinkeby"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.7.0",
+    "dotenv": "^10.0.0",
+    "truffle-plugin-verify": "^0.5.18"
+  }
+}
